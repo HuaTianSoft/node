@@ -26,7 +26,7 @@ if not os.path.exists(sys.argv[1]) or not os.listdir(sys.argv[1]):
     print("\033[91mError: \033[0m" + "Invalid path to the Android NDK")
     sys.exit(1)
 
-if int(sys.argv[2]) < 24:
+if int(float(sys.argv[2])) < 24:
     print("\033[91mError: \033[0m" + "Android SDK version must be at least 24 (Android 7.0)")
     sys.exit(1)
 
