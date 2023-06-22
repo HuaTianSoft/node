@@ -22,7 +22,7 @@ jobs:
     - name: Unzip NDK package
       run: unzip -q android-ndk-r24-linux.zip
     - name: Rename NDK dir
-      run: mv android-ndk-r21e ndk
+      run: mv android-ndk-r24 ndk
     - name: Clean cache
       run: rm android-ndk-r24-linux.zip
     - name: Grant permissions
